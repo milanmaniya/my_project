@@ -424,8 +424,8 @@ class PracticeDemo extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                height: 70,
-                width: 70,
+                height: 40,
+                width: 40,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     color: Colors.deepPurple[100],
@@ -440,12 +440,12 @@ class PracticeDemo extends StatelessWidget {
                 child: Icon(
                   Icons.home_outlined,
                   color: Colors.deepPurple[700],
-                  size: 50,
+                  size: 25,
                 ),
               ),
               Container(
-                height: 70,
-                width: 70,
+                height: 40,
+                width: 40,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     color: Colors.deepPurple[100],
@@ -460,12 +460,12 @@ class PracticeDemo extends StatelessWidget {
                 child: Icon(
                   Icons.search_outlined,
                   color: Colors.deepPurple[700],
-                  size: 50,
+                  size: 25,
                 ),
               ),
               Container(
-                height: 70,
-                width: 70,
+                height: 40,
+                width: 40,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     color: Colors.deepPurple[100],
@@ -480,12 +480,12 @@ class PracticeDemo extends StatelessWidget {
                 child: Icon(
                   Icons.add_box,
                   color: Colors.deepPurple[700],
-                  size: 50,
+                  size: 25,
                 ),
               ),
               Container(
-                height: 70,
-                width: 70,
+                height: 40,
+                width: 40,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     color: Colors.deepPurple[100],
@@ -500,12 +500,12 @@ class PracticeDemo extends StatelessWidget {
                 child: Icon(
                   Icons.bookmark,
                   color: Colors.deepPurple[700],
-                  size: 50,
+                  size: 25,
                 ),
               ),
               Container(
-                height: 70,
-                width: 70,
+                height: 40,
+                width: 40,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     color: Colors.deepPurple[100],
@@ -520,7 +520,7 @@ class PracticeDemo extends StatelessWidget {
                 child: Icon(
                   Icons.more_horiz_outlined,
                   color: Colors.deepPurple[700],
-                  size: 50,
+                  size: 25,
                 ),
               )
             ],
