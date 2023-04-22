@@ -51,7 +51,7 @@ class ContainerDemo extends StatelessWidget {
             tileMode: TileMode.mirror,
           ),
           shape: BoxShape.rectangle,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
                 color: Colors.grey,
                 blurRadius: 10,
