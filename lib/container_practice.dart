@@ -22,6 +22,9 @@ class ContainerExampleDemo extends StatelessWidget {
                 image: NetworkImage(
                     "https://m.media-amazon.com/images/I/51ZT3aMrJIL._SX522_.jpg"),
                 //fit: BoxFit.fill,
+                opacity: 2.0,
+                scale: 5.0,
+                matchTextDirection: true,
                 alignment: Alignment.center,
                 filterQuality: FilterQuality.low),
           ),

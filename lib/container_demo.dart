@@ -19,20 +19,53 @@ class ContainerDemo extends StatelessWidget {
             width: 3,
             strokeAlign: 4,
           ),
-          borderRadius: BorderRadius.circular(20),
+          // borderRadius: BorderRadius.circular(20),
           // image: const DecorationImage(
           //   image: NetworkImage(
           //       "https://m.media-amazon.com/images/I/61EC2FCyx1L._UL1440_.jpg"),
           // ),
-          gradient: const LinearGradient(
-              colors: [Colors.red, Colors.yellow, Colors.green],
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
-              stops: [0.2, 0.5, 0.4]),
+
+          // linear gradient
+          // gradient: const LinearGradient(
+          //     colors: [Colors.red, Colors.yellow, Colors.green],
+          //     begin: Alignment.topRight,
+          //     end: Alignment.bottomLeft,
+          //     stops: [0.2, 0.5, 0.4],
+          //     ),
+
+          // radial gradient
+          gradient: const RadialGradient(
+            colors: [
+              Colors.red,
+              Colors.orange,
+              Colors.yellowAccent,
+              Colors.lightGreen,
+              Colors.lightBlue,
+              Colors.deepPurpleAccent,
+              Colors.purpleAccent
+            ],
+            center: Alignment.bottomLeft,
+            focal: Alignment.bottomLeft,
+            focalRadius: 0.1,
+            radius: 1.2,
+            tileMode: TileMode.mirror,
+          ),
+          shape: BoxShape.rectangle,
+          boxShadow: [
+            BoxShadow(
+                color: Colors.grey,
+                blurRadius: 10,
+                spreadRadius: 15,
+                offset: Offset(5, 10)),
+            BoxShadow(
+                color: Colors.red,
+                blurRadius: 5,
+                spreadRadius: 2,
+                offset: Offset(10, 20)),
+          ],
         ),
-        child: const Text(
-          "Maniya Milan",
-        ),
+
+        //child: Text("Maniya Milan"),
       ),
     );
   }
