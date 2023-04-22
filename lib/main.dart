@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/practice/first_ui.dart';
 import 'package:my_project/practice/second_ui.dart';
 
 void main() {
