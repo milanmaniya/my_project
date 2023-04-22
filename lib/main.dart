@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/practice/third_ui.dart';
+import 'package:my_project/practice/four_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: ThirdUi(),
+      home: FourUi(),
     );
   }
 }
