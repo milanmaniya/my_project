@@ -5,9 +5,20 @@ class IconDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: Icon(Icons.accessibility_new_outlined),
+        child: Icon(
+          Icons.accessibility_new_outlined,
+          color: Colors.red,
+          size: 50,
+          shadows: [
+            Shadow(
+              color: Colors.purpleAccent,
+              blurRadius: 20,
+              offset: Offset(10, 30),
+            ),
+          ],
+        ),
       ),
     );
   }
