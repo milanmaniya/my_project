@@ -141,7 +141,7 @@ class FirstUi extends StatelessWidget {
           ),
           Container(
             height: 160,
-            margin: EdgeInsets.symmetric(horizontal: 60),
+            margin: const EdgeInsets.symmetric(horizontal: 60),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.red.shade400,
@@ -200,7 +200,7 @@ class FirstUi extends StatelessWidget {
           ),
           Container(
             height: 160,
-            margin: EdgeInsets.symmetric(horizontal: 60),
+            margin: const EdgeInsets.symmetric(horizontal: 60),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.deepPurpleAccent,
