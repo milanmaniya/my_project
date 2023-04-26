@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/practice/five_ui.dart';
+
+import 'package:my_project/practice/six_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: FiveUi(),
+      debugShowCheckedModeBanner: false,
+      home: SixUi(),
     );
   }
 }
