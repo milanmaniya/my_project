@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'bottom_navigation_bar.dart';
+import 'package:my_project/practice/ui7.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BottomNavigationBarDemo(),
+      home: Ui7(),
     );
   }
 }

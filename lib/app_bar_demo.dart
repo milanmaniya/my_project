@@ -16,17 +16,35 @@ class AppBarDemo extends StatelessWidget {
         ],
         centerTitle: true,
         bottom: PreferredSize(
-          preferredSize: const Size(double.infinity, 70),
+          preferredSize: const Size(double.infinity, 50),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: const [
-              Text("Chat"),
-              Text("Status"),
-              Text("Calls"),
+              Text(
+                "Chat",
+                style: TextStyle(color: Colors.white, fontSize: 18),
+              ),
+              Text(
+                "Status",
+                style: TextStyle(color: Colors.white, fontSize: 18),
+              ),
+              Text(
+                "Calls",
+                style: TextStyle(color: Colors.white, fontSize: 18),
+              ),
             ],
           ),
         ),
-        elevation: 20,
+        elevation: 40,
+        backgroundColor: Colors.green,
+        // leadingWidth: 60,
+        // titleSpacing: 70,
+        // titleTextStyle:
+        // const TextStyle(color: Colors.black),
+        automaticallyImplyLeading: true,
+        bottomOpacity: 0.5,
+        // shape: ShapeBorder.lerp(Border.all(), Border.all(), 0),
+        shadowColor: Colors.greenAccent,
       ),
     );
   }
