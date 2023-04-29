@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
 class CommonWidgetDemo extends StatelessWidget {
-  final String name;
-  final Color? color;
-  final Icon? iconn;
+  const CommonWidgetDemo({super.key});
 
-  const CommonWidgetDemo(
-      {super.key,
-      required this.name,
-      this.color = Colors.blue,
-      required this.iconn});
+//   final String name;
+//   final Color? color;
+//   final Icon? iconn;
+
+//   const CommonWidgetDemo(
+//       {super.key,
+//       required this.name,
+//       this.color = Colors.blue,
+//       required this.iconn});
 
   @override
   Widget build(BuildContext context) {
@@ -17,12 +19,11 @@ class CommonWidgetDemo extends StatelessWidget {
       body: Container(
         height: 100,
         width: 100,
-        color: color,
+        color: Colors.black,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text(name),
-            iconn!,
+            Text("sdndnd"),
           ],
         ),
       ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SecondUi extends StatelessWidget {
-  const SecondUi({super.key});
+class Ui2 extends StatelessWidget {
+  const Ui2({super.key});
 
   @override
   Widget build(BuildContext context) {
