@@ -14,7 +14,7 @@ class AppBarDemo extends StatelessWidget {
           Icon(Icons.search),
           Icon(Icons.more_vert),
         ],
-        centerTitle: true,
+        // centerTitle: true,
         bottom: PreferredSize(
           preferredSize: const Size(double.infinity, 50),
           child: Row(
@@ -41,7 +41,7 @@ class AppBarDemo extends StatelessWidget {
         // titleSpacing: 70,
         // titleTextStyle:
         // const TextStyle(color: Colors.black),
-        automaticallyImplyLeading: true,
+        //automaticallyImplyLeading: true,
         bottomOpacity: 0.5,
         // shape: ShapeBorder.lerp(Border.all(), Border.all(), 0),
         shadowColor: Colors.greenAccent,

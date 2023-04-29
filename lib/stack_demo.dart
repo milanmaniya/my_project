@@ -9,7 +9,7 @@ class StackDemo extends StatelessWidget {
       body: Center(
         child: Stack(
           alignment: Alignment.center,
-          fit: StackFit.loose,
+          fit: StackFit.passthrough,
           children: [
             Container(
               height: 300,

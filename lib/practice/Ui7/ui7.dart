@@ -253,7 +253,7 @@ class Ui7 extends StatelessWidget {
                                 style: TextStyle(
                                     color: Colors.black, fontSize: 12),
                               ),
-                            )
+                            ),
                           ],
                         ),
                       ],

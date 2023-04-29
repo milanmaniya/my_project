@@ -84,16 +84,17 @@ class SecondUi extends StatelessWidget {
                     height: 70,
                     width: 70,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        color: Colors.deepPurple[100],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.deepPurple.shade200,
-                            blurRadius: 10,
-                            offset: const Offset(2, 3),
-                            spreadRadius: 2,
-                          )
-                        ]),
+                      borderRadius: BorderRadius.circular(12),
+                      color: Colors.deepPurple[100],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.deepPurple.shade200,
+                          blurRadius: 10,
+                          offset: const Offset(2, 3),
+                          spreadRadius: 2,
+                        )
+                      ],
+                    ),
                     child: Icon(
                       Icons.sports_baseball_outlined,
                       color: Colors.deepPurple[700],
