@@ -1,3 +1,5 @@
+// ignore: file_names
+// ignore_for_file: file_names, duplicate_ignores, duplicate_ignore
 import 'package:flutter/material.dart';
 
 class Ui7 extends StatelessWidget {
