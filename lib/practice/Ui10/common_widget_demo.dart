@@ -8,20 +8,31 @@ class CommonWidgetDemo extends StatelessWidget {
     // ignore: non_constant_identifier_names
     Widget common({
       required String name,
-      required Color co,
-      required IconData ic,
-      required BorderRadiusGeometry bor,
+      required Color color,
+      required IconData icon,
+      double topLeft = 0,
+      double topRight = 0,
+      double botttomLeft = 0,
+      double bottomRight = 0,
       required TextStyle sty,
     }) {
       return Container(
         height: 160,
         width: 160,
-        decoration: BoxDecoration(color: co, borderRadius: bor),
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.only(
+            topRight: Radius.circular(topRight),
+            topLeft: Radius.circular(topLeft),
+            bottomRight: Radius.circular(bottomRight),
+            bottomLeft: Radius.circular(botttomLeft),
+          ),
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Icon(
-              ic,
+              icon,
               color: Colors.white,
               size: 50,
             ),
@@ -36,19 +47,21 @@ class CommonWidgetDemo extends StatelessWidget {
 
     Widget common1({
       required IconData icon,
-      required String name,
+      required String title,
       required String subtitle,
       required String money,
       required String date,
-      required Color color,
+      required Color backGroundcolor,
       required Color iconContainerColor,
-      required EdgeInsetsGeometry margin,
-      required BorderRadiusGeometry radius,
+      double margin = 0,
+      double radius = 0,
     }) {
       return Container(
         height: 160,
-        margin: margin,
-        decoration: BoxDecoration(borderRadius: radius, color: color),
+        margin: EdgeInsets.symmetric(horizontal: margin),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(radius),
+            color: backGroundcolor),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -67,7 +80,7 @@ class CommonWidgetDemo extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  name,
+                  title,
                   style: const TextStyle(
                     height: 1.2,
                     color: Colors.white,
@@ -128,23 +141,19 @@ class CommonWidgetDemo extends StatelessWidget {
             children: [
               common(
                 name: "Load Money",
-                co: Colors.redAccent,
-                ic: Icons.search_outlined,
-                bor: const BorderRadius.only(
-                  topRight: Radius.circular(30),
-                  bottomLeft: Radius.circular(30),
-                ),
+                color: Colors.redAccent,
+                icon: Icons.search_outlined,
+                topRight: 30,
+                botttomLeft: 30,
                 sty: const TextStyle(
                     color: Colors.white, fontWeight: FontWeight.bold),
               ),
               common(
                 name: "Merchant Money",
-                co: Colors.green,
-                ic: Icons.money_outlined,
-                bor: const BorderRadius.only(
-                  topLeft: Radius.circular(30),
-                  bottomRight: Radius.circular(30),
-                ),
+                color: Colors.green,
+                icon: Icons.money_outlined,
+                topLeft: 30,
+                bottomRight: 30,
                 sty: const TextStyle(
                     color: Colors.white, fontWeight: FontWeight.bold),
               ),
@@ -155,49 +164,45 @@ class CommonWidgetDemo extends StatelessWidget {
             children: [
               common(
                 name: "Send Money",
-                co: Colors.blue,
-                ic: Icons.print,
-                bor: const BorderRadius.only(
-                  topLeft: Radius.circular(30),
-                  bottomRight: Radius.circular(30),
-                ),
+                color: Colors.blue,
+                icon: Icons.print,
+                topLeft: 30,
+                bottomRight: 30,
                 sty: const TextStyle(
                     color: Colors.white, fontWeight: FontWeight.bold),
               ),
               common(
                 name: "Request Money",
-                co: Colors.deepPurple,
-                ic: Icons.image,
-                bor: const BorderRadius.only(
-                  topRight: Radius.circular(30),
-                  bottomLeft: Radius.circular(30),
-                ),
+                color: Colors.deepPurple,
+                icon: Icons.image,
+                topRight: 30,
+                botttomLeft: 30,
                 sty: const TextStyle(
                     color: Colors.white, fontWeight: FontWeight.bold),
               ),
             ],
           ),
           common1(
-            color: Colors.red,
+            backGroundcolor: Colors.red,
             date: "19/01/2022",
             icon: Icons.search_rounded,
-            name: "Shell Darwen",
-            margin: const EdgeInsets.symmetric(horizontal: 60),
+            title: "Shell Darwen",
+            margin: 60,
             iconContainerColor: Colors.green,
             money: "\$30",
             subtitle: "Marchent Payment",
-            radius: BorderRadius.circular(20),
+            radius: 20,
           ),
           common1(
-            color: Colors.deepPurple,
+            backGroundcolor: Colors.deepPurple,
             date: "23/01/2022",
             icon: Icons.image,
-            name: "John Doe",
-            margin: const EdgeInsets.symmetric(horizontal: 60),
+            title: "John Doe",
+            margin: 60,
             iconContainerColor: Colors.blue,
             money: "\$50",
             subtitle: "Marchent Payment",
-            radius: BorderRadius.circular(20),
+            radius: 20,
           ),
         ],
       ),
