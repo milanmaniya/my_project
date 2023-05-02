@@ -5,6 +5,14 @@ class CustomeFontDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold(
+      body: Center(
+        child: Text(
+          "Chocolate With Almonde",
+          style: TextStyle(
+              color: Colors.black, fontFamily: "Dancing Script", fontSize: 30),
+        ),
+      ),
+    );
   }
 }
