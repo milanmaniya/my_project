@@ -149,7 +149,7 @@ class Page3 extends StatelessWidget {
                               Container(
                                 alignment: Alignment.center,
                                 height: 40,
-                                width: 122,
+                                width: 123,
                                 decoration: BoxDecoration(
                                   color: Colors.orange.shade300,
                                   borderRadius: BorderRadius.circular(9),
