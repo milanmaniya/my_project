@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/practice/Ui12/shopping_page_3.dart';
+import 'package:my_project/practice/tickets%20app/screens/booking_screen/booking_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Page3(),
+      home: BookingPage(),
     );
   }
 }
