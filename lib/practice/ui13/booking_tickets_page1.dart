@@ -108,13 +108,13 @@ class BookingTicketPage1 extends StatelessWidget {
                             color: Colors.blueGrey.shade100,
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          child: Column(
+                          child: const Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
-                                children: const [
+                                children: [
                                   Icon(
                                     Icons.circle_outlined,
                                     color: Colors.red,
@@ -145,7 +145,7 @@ class BookingTicketPage1 extends StatelessWidget {
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
-                                children: const [
+                                children: [
                                   Text(
                                     "New York",
                                     style: TextStyle(
@@ -169,7 +169,7 @@ class BookingTicketPage1 extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 height: 35,
                               ),
                               Row(
@@ -179,7 +179,7 @@ class BookingTicketPage1 extends StatelessWidget {
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
-                                    children: const [
+                                    children: [
                                       Text(
                                         "10:40am",
                                         style: TextStyle(
@@ -201,7 +201,7 @@ class BookingTicketPage1 extends StatelessWidget {
                                   ),
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.end,
-                                    children: const [
+                                    children: [
                                       Text(
                                         "12:40pm",
                                         style: TextStyle(
@@ -246,8 +246,8 @@ class BookingTicketPage1 extends StatelessWidget {
                             color: Colors.blueGrey.shade100,
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          child: Row(
-                            children: const [
+                          child: const Row(
+                            children: [
                               Icon(
                                 Icons.airplane_ticket_outlined,
                                 color: Colors.red,
@@ -292,13 +292,13 @@ class BookingTicketPage1 extends StatelessWidget {
                             color: Colors.blueGrey.shade100,
                             borderRadius: BorderRadius.circular(20),
                           ),
-                          child: Column(
+                          child: const Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
-                                children: const [
+                                children: [
                                   Icon(
                                     Icons.circle_outlined,
                                     color: Colors.red,
@@ -329,7 +329,7 @@ class BookingTicketPage1 extends StatelessWidget {
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
-                                children: const [
+                                children: [
                                   Text(
                                     "New York",
                                     style: TextStyle(
@@ -353,7 +353,7 @@ class BookingTicketPage1 extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 height: 35,
                               ),
                               Row(
@@ -363,7 +363,7 @@ class BookingTicketPage1 extends StatelessWidget {
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
-                                    children: const [
+                                    children: [
                                       Text(
                                         "12:22am",
                                         style: TextStyle(
@@ -385,7 +385,7 @@ class BookingTicketPage1 extends StatelessWidget {
                                   ),
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.end,
-                                    children: const [
+                                    children: [
                                       Text(
                                         "2:22am",
                                         style: TextStyle(

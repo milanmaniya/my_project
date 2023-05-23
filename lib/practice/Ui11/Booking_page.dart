@@ -118,9 +118,9 @@ class BookingPageDemo extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.white.withOpacity(0.250),
               ),
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: const [
+                children: [
                   Icon(
                     Icons.account_circle_outlined,
                     color: Colors.white,
@@ -166,6 +166,7 @@ class BookingPageDemo extends StatelessWidget {
             height: 50,
             decoration: BoxDecoration(
                 color: Colors.white70, borderRadius: BorderRadius.circular(20)),
+            // ignore: prefer_const_constructors
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: const [

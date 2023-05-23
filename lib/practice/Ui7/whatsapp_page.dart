@@ -14,18 +14,18 @@ class Ui7 extends StatelessWidget {
             height: 100,
             width: double.infinity,
             color: const Color.fromRGBO(18, 140, 126, 5),
-            child: Column(
+            child: const Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(
+                  padding: EdgeInsets.only(
                     left: 20,
                     right: 10,
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text(
+                      Text(
                         "WhatsApp",
                         style: TextStyle(
                             color: Colors.white70,
@@ -36,7 +36,7 @@ class Ui7 extends StatelessWidget {
                         width: 100,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: const [
+                          children: [
                             Icon(
                               Icons.camera_alt_outlined,
                               size: 20,
@@ -60,7 +60,7 @@ class Ui7 extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: const [
+                  children: [
                     Icon(
                       Icons.groups_3_rounded,
                       size: 22,
@@ -111,10 +111,10 @@ class Ui7 extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                        Column(
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Maniya Milan",
                               style: TextStyle(color: Colors.white),
@@ -160,19 +160,19 @@ class Ui7 extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.only(top: 15, left: 20, right: 20),
                     height: 60,
-                    child: Row(
+                    child: const Row(
                       children: [
-                        const CircleAvatar(
+                        CircleAvatar(
                           backgroundImage: NetworkImage(
                               "https://as1.ftcdn.net/v2/jpg/02/01/92/42/1000_F_201924201_P6mGeFsOkpfcRGXWe3dC9uOey22lWLUm.jpg"),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 20,
                         ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Yash Suvagiya",
                               style: TextStyle(color: Colors.white),
@@ -186,13 +186,13 @@ class Ui7 extends StatelessWidget {
                             )
                           ],
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 180,
                         ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.end,
-                          children: const [
+                          children: [
                             Text(
                               "10:56 pm",
                               style:
@@ -215,10 +215,10 @@ class Ui7 extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                        Column(
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Maniya Milan",
                               style: TextStyle(color: Colors.white),
@@ -273,10 +273,10 @@ class Ui7 extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                        Column(
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Maniya Milan",
                               style: TextStyle(color: Colors.white),
@@ -331,10 +331,11 @@ class Ui7 extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                        Column(
+                  
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Maniya Milan",
                               style: TextStyle(color: Colors.white),
@@ -389,10 +390,10 @@ class Ui7 extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                        Column(
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Maniya Milan",
                               style: TextStyle(color: Colors.white),
@@ -447,10 +448,10 @@ class Ui7 extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                        Column(
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Maniya Milan",
                               style: TextStyle(color: Colors.white),
@@ -505,10 +506,10 @@ class Ui7 extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                        Column(
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Maniya Milan",
                               style: TextStyle(color: Colors.white),
@@ -563,10 +564,10 @@ class Ui7 extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                        Column(
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Maniya Milan",
                               style: TextStyle(color: Colors.white),
@@ -621,10 +622,10 @@ class Ui7 extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                        Column(
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Maniya Milan",
                               style: TextStyle(color: Colors.white),
@@ -679,10 +680,11 @@ class Ui7 extends StatelessWidget {
                         const SizedBox(
                           width: 20,
                         ),
-                        Column(
+                     
+                        const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Maniya Milan",
                               style: TextStyle(color: Colors.white),

@@ -207,14 +207,14 @@ class DoctorOppimentPage2 extends StatelessWidget {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(20),
                             ),
-                            child: Row(
+                            child: const Row(
                               children: [
-                                const CircleAvatar(
+                                CircleAvatar(
                                   radius: 28,
                                   backgroundImage: AssetImage(
                                       "assets/images/accuntlogo.png"),
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   width: 30,
                                 ),
                                 Expanded(
@@ -224,17 +224,17 @@ class DoctorOppimentPage2 extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      const Text(
+                                      Text(
                                         "Dr. Luna",
                                         style: TextStyle(
                                             color: Colors.black,
                                             fontWeight: FontWeight.bold),
                                       ),
-                                      const Text("0.3 km away, Prime Medical"),
-                                      const Text("MBBS(FPCS)"),
+                                      Text("0.3 km away, Prime Medical"),
+                                      Text("MBBS(FPCS)"),
                                       Row(
                                         mainAxisSize: MainAxisSize.min,
-                                        children: const [
+                                        children: [
                                           Icon(
                                             Icons.star,
                                             color: Colors.yellow,
@@ -260,7 +260,7 @@ class DoctorOppimentPage2 extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                                const Icon(
+                                Icon(
                                   Icons.favorite_outline_rounded,
                                   color: Colors.black,
                                   size: 25,
@@ -279,14 +279,14 @@ class DoctorOppimentPage2 extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
-                          const CircleAvatar(
+                           CircleAvatar(
                             radius: 28,
                             backgroundImage:
                                 AssetImage("assets/images/accuntlogo.png"),
                           ),
-                          const SizedBox(
+                           SizedBox(
                             width: 30,
                           ),
                           Expanded(
@@ -294,17 +294,17 @@ class DoctorOppimentPage2 extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text(
+                                Text(
                                   "Dr. Luna",
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold),
                                 ),
-                                const Text("0.3 km away, Prime Medical"),
-                                const Text("MBBS(FPCS)"),
+                                Text("0.3 km away, Prime Medical"),
+                                Text("MBBS(FPCS)"),
                                 Row(
                                   mainAxisSize: MainAxisSize.min,
-                                  children: const [
+                                  children: [
                                     Icon(
                                       Icons.star,
                                       color: Colors.yellow,
@@ -330,7 +330,7 @@ class DoctorOppimentPage2 extends StatelessWidget {
                               ],
                             ),
                           ),
-                          const Icon(
+                          Icon(
                             Icons.favorite_outline_rounded,
                             color: Colors.black,
                             size: 25,

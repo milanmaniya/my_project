@@ -30,12 +30,12 @@ class WhatsappUi1 extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color.fromRGBO(18, 140, 126, 5),
         title: const Text("WhatsApp"),
-        actions: [
+        actions: const [
           SizedBox(
             width: 120,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
+              children: [
                 Icon(Icons.camera_alt_outlined),
                 Icon(Icons.search_outlined),
                 Icon(Icons.more_vert),
@@ -44,11 +44,11 @@ class WhatsappUi1 extends StatelessWidget {
           ),
         ],
         elevation: 5,
-        bottom: PreferredSize(
-          preferredSize: const Size(double.infinity, 60),
+        bottom: const PreferredSize(
+          preferredSize: Size(double.infinity, 60),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
+            children: [
               Icon(
                 Icons.groups,
                 color: Colors.white70,

@@ -41,9 +41,9 @@ class Page1 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Icon(
                   Icons.notes_outlined,
                   color: Colors.black87,
@@ -64,8 +64,8 @@ class Page1 extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Text(
                   "What's today's taste? ",
                   style: TextStyle(
@@ -202,8 +202,8 @@ class Page1 extends StatelessWidget {
                             "\$9.43",
                             style: TextStyle(color: Colors.white),
                           ),
-                          Row(
-                            children: const [
+                          const Row(
+                            children: [
                               Icon(
                                 Icons.star,
                                 color: Colors.white,
@@ -232,9 +232,9 @@ class Page1 extends StatelessWidget {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(16),
                             ),
-                            child: Row(
+                            child: const Row(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
+                              children: [
                                 Icon(
                                   Icons.shopping_cart,
                                   color: Colors.black,

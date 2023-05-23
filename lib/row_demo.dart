@@ -5,12 +5,12 @@ class RowDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         // mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.end,
-        children: const [
+        children: [
           Text("milan"),
           Text("r"),
           Text("maniya"),

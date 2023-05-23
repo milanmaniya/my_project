@@ -5,7 +5,7 @@ class DivPadAlignDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       // body: Padding(
       //   padding: const EdgeInsets.all(8.0),
       //   child: Container(
@@ -46,7 +46,7 @@ class DivPadAlignDemo extends StatelessWidget {
         child: IntrinsicHeight(
           child: Row(
             mainAxisSize: MainAxisSize.min,
-            children: const [
+            children: [
               Text("milan"),
               VerticalDivider(
                 color: Colors.red,

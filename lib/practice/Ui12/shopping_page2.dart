@@ -69,16 +69,16 @@ class Page2 extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text(
+                Text(
                   "Artificial Selection\t\t-Taste Sweet",
                   style: TextStyle(color: Colors.white, fontSize: 16),
                 ),
                 Row(
                   mainAxisSize: MainAxisSize.min,
-                  children: const [
+                  children: [
                     Icon(
                       Icons.star,
                       color: Colors.white,
@@ -132,10 +132,10 @@ class Page2 extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(
+                const Row(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children: const [
+                  children: [
                     Icon(
                       Icons.shopping_bag_outlined,
                       color: Colors.white70,

@@ -17,9 +17,9 @@ class Ui6 extends StatelessWidget {
             color: Colors.grey.shade300),
         child: Column(
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: const [
+              children: [
                 Text(
                   "Sign Up",
                   style: TextStyle(
@@ -60,10 +60,10 @@ class Ui6 extends StatelessWidget {
                 color: Colors.grey[400],
               ),
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.end,
-              children: const [
+              children: [
                 SizedBox(
                   height: 30,
                   width: 20,
@@ -96,10 +96,10 @@ class Ui6 extends StatelessWidget {
                 ],
               ),
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.end,
-              children: const [
+              children: [
                 SizedBox(
                   height: 40,
                   width: 20,
@@ -132,10 +132,10 @@ class Ui6 extends StatelessWidget {
                 ],
               ),
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.end,
-              children: const [
+              children: [
                 SizedBox(
                   height: 40,
                   width: 20,
@@ -209,10 +209,10 @@ class Ui6 extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.end,
-              children: const [
+              children: [
                 SizedBox(
                   height: 50,
                   width: 20,

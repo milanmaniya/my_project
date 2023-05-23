@@ -5,13 +5,28 @@ class Ui1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(
+                      Icons.search_outlined,
+                      color: Colors.white,
+                      size: 50,
+                    ),
+                    Text(
+                      "Load Money",
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold),
+                    )
+                  ],
+                );
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
+            children: [
               Text(
                 " \$1200",
                 style: TextStyle(
@@ -38,21 +53,7 @@ class Ui1 extends StatelessWidget {
                     bottomLeft: Radius.circular(30),
                   ),
                 ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [
-                    Icon(
-                      Icons.search_outlined,
-                      color: Colors.white,
-                      size: 50,
-                    ),
-                    Text(
-                      "Load Money",
-                      style: TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.bold),
-                    )
-                  ],
-                ),
+              
               ),
               Container(
                 height: 160,
@@ -64,9 +65,9 @@ class Ui1 extends StatelessWidget {
                     bottomRight: Radius.circular(30),
                   ),
                 ),
-                child: Column(
+                child: const Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [
+                  children: [
                     Icon(
                       Icons.money_outlined,
                       color: Colors.white,
@@ -95,9 +96,9 @@ class Ui1 extends StatelessWidget {
                     bottomRight: Radius.circular(30),
                   ),
                 ),
-                child: Column(
+                child: const Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [
+                  children: [
                     Icon(
                       Icons.print,
                       color: Colors.white,
@@ -121,9 +122,9 @@ class Ui1 extends StatelessWidget {
                     bottomLeft: Radius.circular(30),
                   ),
                 ),
-                child: Column(
+                child: const Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [
+                  children: [
                     Icon(
                       Icons.image,
                       color: Colors.white,
@@ -160,9 +161,9 @@ class Ui1 extends StatelessWidget {
                     size: 35,
                   ),
                 ),
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     Text(
                       "Shell Darwen",
                       style: TextStyle(
@@ -178,9 +179,9 @@ class Ui1 extends StatelessWidget {
                     )
                   ],
                 ),
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     Text(
                       "\$30",
                       style: TextStyle(
@@ -219,9 +220,9 @@ class Ui1 extends StatelessWidget {
                     size: 35,
                   ),
                 ),
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     Text(
                       "John Doe",
                       style: TextStyle(
@@ -237,9 +238,9 @@ class Ui1 extends StatelessWidget {
                     )
                   ],
                 ),
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     Text(
                       "\$50",
                       style: TextStyle(

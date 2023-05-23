@@ -5,11 +5,11 @@ class ExpendedDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Row(
         //mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const CircleAvatar(
+          CircleAvatar(
             backgroundColor: Colors.red,
             radius: 25,
           ),
@@ -17,13 +17,13 @@ class ExpendedDemo extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Text("Milan"),
                 Text("Hello"),
               ],
             ),
           ),
-          const Text("12:30 pm")
+          Text("12:30 pm")
         ],
       ),
     );

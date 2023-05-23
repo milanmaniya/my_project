@@ -12,9 +12,9 @@ class Ui2 extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
+            children: [
               Icon(
                 Icons.menu,
                 size: 30,
@@ -61,9 +61,9 @@ class Ui2 extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               color: Colors.deepPurple[100],
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
                   "Search or Type web address",
                   style: TextStyle(
@@ -388,20 +388,20 @@ class Ui2 extends StatelessWidget {
                 const SizedBox(
                   width: 15,
                 ),
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text("9 to 5 Mac"),
-                    const Text(
+                    Text("9 to 5 Mac"),
+                    Text(
                       "Everything New in ios 5",
                       style: TextStyle(
                           color: Colors.deepPurple,
                           fontWeight: FontWeight.w600,
                           fontSize: 20),
                     ),
-                    const Text("App Privacy Report and"),
-                    const Text("Auto Column Updates"),
+                    Text("App Privacy Report and"),
+                    Text("Auto Column Updates"),
                     SizedBox(
                       height: 30,
                       width: 225,
@@ -409,12 +409,12 @@ class Ui2 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
-                            children: const [
+                            children: [
                               Icon(Icons.favorite_outline),
                               Icon(Icons.bookmark_border),
                             ],
                           ),
-                          const Text("1 day ago")
+                          Text("1 day ago")
                         ],
                       ),
                     ),

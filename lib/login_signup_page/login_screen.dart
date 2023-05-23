@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 
 import 'package:my_project/login_signup_page/sign_up_screen.dart';
 
+// ignore: must_be_immutable
 class LoginPage extends StatelessWidget {
+  // ignore: prefer_typing_uninitialized_variables
   var email;
+  // ignore: prefer_typing_uninitialized_variables
   var pass;
 
   LoginPage({

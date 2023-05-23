@@ -78,12 +78,12 @@ class BookingPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Expanded(
+                      const Expanded(
                         flex: 2,
                         child: SizedBox(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: const [
+                            children: [
                               Text(
                                 "Train",
                                 style: TextStyle(

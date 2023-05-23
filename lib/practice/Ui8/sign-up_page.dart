@@ -20,9 +20,9 @@ class Ui8 extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
+              children: [
                 Icon(
                   Icons.skip_previous_rounded,
                   size: 30,
@@ -42,9 +42,9 @@ class Ui8 extends StatelessWidget {
             const SizedBox(
               height: 50,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   "Sign up with one of the following options.",
                   style: TextStyle(
@@ -194,9 +194,9 @@ class Ui8 extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 Text(
                   "Already have an account?",
                   style: TextStyle(

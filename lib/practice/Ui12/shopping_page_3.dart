@@ -85,8 +85,8 @@ class Page3 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      children: const [
+                    const Row(
+                      children: [
                         Icon(
                           Icons.shopify_sharp,
                           color: Colors.white,
