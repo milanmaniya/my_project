@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/practice/banking_app/screens/transform_rotate.dart';
+import 'advance/cruved_animated_bottom_navigation_bar/bottoim_navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +12,12 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
- class _MyAppState extends State<MyApp> {
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TransformRotate(),
+      home: AnimtedBottomNavigationBar(),
     );
   }
 }

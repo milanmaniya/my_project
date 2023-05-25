@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
 
 class TransformRotate extends StatefulWidget {
   const TransformRotate({super.key});
@@ -49,6 +48,7 @@ class _TransformRotateState extends State<TransformRotate> {
     setState(() {});
   }
 
+// circle rotate
 //   @override
 //   Widget build(BuildContext context) {
 //     return Column(
@@ -70,6 +70,7 @@ class _TransformRotateState extends State<TransformRotate> {
 //     );
 //   }
 
+// atm card design
   @override
   Widget build(BuildContext context) {
     return Scaffold(
