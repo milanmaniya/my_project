@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'advance/animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
-import 'advance/cruved_animated_bottom_navigation_bar/bottoim_navigation_bar_demo.dart';
+import 'package:my_project/Buttons/material_button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +16,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      home: MaterialButtonDemo(),
       debugShowCheckedModeBanner: false,
-      home: AnimtedCurveBottomNavigationBar(),
-    );
+     );   
   }
 }
