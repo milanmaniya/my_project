@@ -1,13 +1,12 @@
+import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
-class MaterialButtonDemo extends StatelessWidget {
-  const MaterialButtonDemo({super.key});
-
-  static GlobalKey<ScaffoldState> drawerGlobalKey = GlobalKey();
+class Bottom extends StatelessWidget {
+  const Bottom({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Widget commonDrawer({
+     Widget commonDrawer({
       required String label,
       required IconData icon,
     }) =>
@@ -23,121 +22,134 @@ class MaterialButtonDemo extends StatelessWidget {
           ),
         );
 
-    return Scaffold(
-      key: drawerGlobalKey,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            MaterialButton(
-              onPressed: () {
-                print("Hyy, I am material button");
-              },
-              child: const Text("Material Button"),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                print("Hyy, I am elevated button");
-              },
-              child: const Text("Elevated button"),
-            ),
-            TextButton(
-              onPressed: () {
-                print("Hyy, i am text button");
-              },
-              child: const Text("Text Button"),
-            ),
-            IconButton(
-              onPressed: () {
-                print("Hyy, i m icon button");
-              },
-              icon: const Icon(Icons.home),
-            ),
-            OutlinedButton(
-              onPressed: () {
-                print("Hyy, i am outlined button");
-              },
-              child: const Text("Outlined Button"),
-            ),
-            // FloatingActionButton(
-            //   onPressed: () {
-            //     print("Hyy, i am floating action button");
-            //   },
-            //   child: const Icon(Icons.home),
-            // ),
-            // FloatingActionButton.extended(
-            //   icon: const Icon(Icons.home),
-            //   onPressed: () {
-            //     print("Hyy, i am floating action button extended");
-            //   },
-            //   label: const Text("floating action button extended"),
-            // ),
-            // FloatingActionButton.large(
-            //   onPressed: () {
-            //     print("Hyy, i am floating action button large");
-            //   },
-            //   child: const Icon(Icons.home),
-            // ),
-            // FloatingActionButton.small(
-            //   onPressed: () {
-            //     print("Hyy, i am floating action button small");
-            //   },
-            //   child: const Icon(Icons.home),
-            // )
-            GestureDetector(
-              onTap: () {
-                print("Hyy, i am tapable container");
-              },
-              onDoubleTap: () {
-                print("Hyy, i am double tapable event");
-              },
-              onLongPress: () {
-                print("Hyy, i am long presss event");
-              },
-              child: Card(
-                elevation: 50,
-                child: Container(
-                  alignment: Alignment.center,
-                  height: 100,
-                  width: 100,
-                  color: Colors.blue,
-                  child: const Text(
-                    "Milan Maniya",
+    Widget commonContaiber() => AnimatedContainer(
+          height: 330,
+          color: Colors.black87,
+          duration: const Duration(seconds: 10),
+          curve: Curves.fastOutSlowIn,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 17, right: 17, top: 17),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      "Create",
+                      style: TextStyle(color: Colors.white, fontSize: 22),
+                    ),
+                    IconButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: const Icon(
+                        Icons.close,
+                        color: Colors.white,
+                        size: 30,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const ListTile(
+                leading: CircleAvatar(
+                  radius: 20,
+                  backgroundColor: Colors.black45,
+                  child: Icon(
+                    Icons.bolt,
+                    color: Colors.white,
+                  ),
+                ),
+                title: Text(
+                  "Create a Short",
+                  style: TextStyle(
+                    color: Colors.white,
                   ),
                 ),
               ),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                print("Hyy, i am bottom sheet");
-                showModalBottomSheet(
-                  context: context,
-                  builder: (context) => Container(),
-                );
-              },
-              child: const Text("Bottom Sheet"),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                print("Hyy, i am snack bar");
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text("milan maniya"),
+              const ListTile(
+                leading: CircleAvatar(
+                  radius: 20,
+                  backgroundColor: Colors.black45,
+                  child: Icon(
+                    Icons.upload,
+                    color: Colors.white,
                   ),
-                );
-              },
-              child: const Text("Snack Bar"),
-            ),
-            InkWell(
-              onTap: () {
-                drawerGlobalKey.currentState!.openDrawer();
-              },
-              child: const Text("Open drawer"),
-            ),
-          ],
-        ),
+                ),
+                title: Text(
+                  "Upoload a video",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              const ListTile(
+                leading: CircleAvatar(
+                  radius: 20,
+                  backgroundColor: Colors.black45,
+                  child: Icon(
+                    Icons.wifi,
+                    color: Colors.white,
+                  ),
+                ),
+                title: Text(
+                  "Go live",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              const ListTile(
+                leading: CircleAvatar(
+                  radius: 20,
+                  backgroundColor: Colors.black45,
+                  child: Icon(
+                    Icons.note_alt_outlined,
+                    color: Colors.white,
+                  ),
+                ),
+                title: Text(
+                  "Create a post",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+
+    int index = 0;
+
+    List<IconData> icons = [
+      Icons.home,
+      Icons.home,
+      Icons.home,
+      Icons.home,
+    ];
+
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          showModalBottomSheet(
+            context: context,
+            builder: (context) => commonContaiber(),
+          );
+        },
+        child: const Icon(Icons.add),
       ),
-      endDrawer: Drawer(
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: AnimatedBottomNavigationBar(
+        icons: icons,
+        activeIndex: index,
+        leftCornerRadius: 20,
+        rightCornerRadius: 20,
+        gapLocation: GapLocation.center,
+        onTap: (p0) {},
+      ),
+        endDrawer: Drawer(
         backgroundColor: Colors.black87,
         child: SingleChildScrollView(
           child: Padding(
@@ -278,12 +290,7 @@ class MaterialButtonDemo extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          print("Hyy, i am floating action button");
-        },
-        child: const Icon(Icons.home),
-      ),
+
     );
   }
 }

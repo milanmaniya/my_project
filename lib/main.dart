@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/Buttons/material_button.dart';
+import 'package:my_project/bottom.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,8 +16,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MaterialButtonDemo(),
+      home: Bottom(),
       debugShowCheckedModeBanner: false,
-     );   
+    );
   }
 }
