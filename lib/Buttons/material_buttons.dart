@@ -8,6 +8,14 @@ class MaterialButtonDemo extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: MaterialButton(
+          color: Colors.red,
+          disabledColor: Colors.green,
+          disabledTextColor: Colors.white,
+          highlightColor: Colors.deepPurple,
+          hoverColor: Colors.pink,
+          minWidth: 150,
+          textColor: Colors.white,
+          splashColor: Colors.green,
           onPressed: () {
             print("Hyy, i am material button");
           },
