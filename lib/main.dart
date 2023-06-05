@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/Buttons/snack_bar.dart';
+import 'package:my_project/practice/Ui7/whatsapp_list_of_map.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: SnackBarDemo(),
+      home: WhatsappListOfMapDemo(),
       debugShowCheckedModeBanner: false,
     );
   }

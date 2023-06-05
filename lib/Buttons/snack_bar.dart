@@ -15,7 +15,6 @@ class SnackBarDemo extends StatelessWidget {
                 showCloseIcon: true,
                 dismissDirection: DismissDirection.horizontal,
                 duration: const Duration(seconds: 6),
-                
                 action: SnackBarAction(
                   label: 'hello',
                   onPressed: () {},

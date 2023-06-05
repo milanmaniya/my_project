@@ -1,32 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:my_project/list_of_map_demo/row_data_whatsapp.dart';
 
-
-// build whatsapp ui for using to list.generate and ListTile
-
-class WhatsappUi1 extends StatelessWidget {
-  const WhatsappUi1({super.key});
+class WhatsappListOfMapDemo extends StatelessWidget {
+  const WhatsappListOfMapDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Widget common(
-            {required IconData icon,
-            required String title,
-            required String subTitle,
-            required String date}) =>
-        ListTile(
-          leading: Icon(
-            icon,
-            color: Colors.white,
-            size: 30,
-          ),
-          title: Text(
-            title,
-            style: const TextStyle(color: Colors.white),
-          ),
-          subtitle: Text(subTitle, style: const TextStyle(color: Colors.white)),
-          trailing: Text(date, style: const TextStyle(color: Colors.white)),
-        );
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromRGBO(18, 140, 126, 5),
@@ -76,19 +55,19 @@ class WhatsappUi1 extends StatelessWidget {
         width: double.infinity,
         color: const Color.fromRGBO(7, 94, 84, 10),
         child: SingleChildScrollView(
-          child: Column(
-            children: [
-              ...List.generate(
-                20,
-                (index) => common(
-                    title: "Milan Maniya",
-                    subTitle: "Hyy, Good Morning",
-                    icon: Icons.account_circle_outlined,
-                    date: "01/05/2023"),
-              ),
-            ],
+            child: Column(
+                children: List.generate(
+          myDetails.length,
+          (index) => ListTile(
+            leading: CircleAvatar(
+              backgroundImage: AssetImage(myDetails[index]['url']),
+              radius: 18,
+            ),
+            title: Text(myDetails[index]['name']),
+            subtitle: Text(myDetails[index]['message']),
+            trailing: Text(myDetails[index]['date']),
           ),
-        ),
+        ))),
       ),
     );
   }
