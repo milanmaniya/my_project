@@ -29,6 +29,8 @@ class WhatsappListOfMapDemo extends StatelessWidget {
             ],
             elevation: 5,
             bottom: const TabBar(
+              indicatorColor: Colors.white,
+              indicatorSize: TabBarIndicatorSize.tab,
               tabs: [
                 Tab(
                   text: 'chat',
