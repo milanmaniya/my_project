@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/list_of_map_demo/row_data_whatsapp.dart';
+import 'package:my_project/practice/Ui7/list_od_model_row_data.dart';
 
 class StatusPage extends StatelessWidget {
   const StatusPage({super.key});
@@ -7,16 +7,20 @@ class StatusPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children:List.generate(myDetails.length, (index) =>  ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage(myDetails[index]['url']),
-                  radius: 18,
-                ),
-                title: Text(myDetails[index]['name']),
-                subtitle: Text(myDetails[index]['message']),
-                trailing: Text(myDetails[index]['date']),
-              ),)
+      body: SingleChildScrollView(
+        child: Column(
+            children: List.generate(
+          whatsappData.length,
+          (index) => ListTile(
+            leading: CircleAvatar(
+              backgroundImage: AssetImage(whatsappData[index].url!),
+              radius: 18,
+            ),
+            title: Text(whatsappData[index].name!),
+            subtitle: Text(whatsappData[index].message!),
+            trailing: Text(whatsappData[index].date!),
+          ),
+        )),
       ),
     );
   }

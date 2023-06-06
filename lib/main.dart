@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/practice/Ui9/instagram_list_of_map.dart';
+import 'package:my_project/list_of_map_demo/model_demo.dart';
+import 'package:my_project/practice/Ui7/whatsapp_list_of_map.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +16,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(brightness: Brightness.dark),
-      home: const InstagramListOfMap(),
+    return const MaterialApp(
+      // theme: ThemeData(brightness: Brightness.dark),
+      home: WhatsappListOfMapDemo(),
       debugShowCheckedModeBanner: false,
     );
   }
