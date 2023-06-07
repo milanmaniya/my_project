@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/list_of_map_demo/model_demo.dart';
-import 'package:my_project/practice/Ui7/whatsapp_list_of_map.dart';
+import 'package:my_project/model_class/Whatsapp_model_class/pages/ui_main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       // theme: ThemeData(brightness: Brightness.dark),
-      home: WhatsappListOfMapDemo(),
+      home: UiPage(),
       debugShowCheckedModeBanner: false,
     );
   }

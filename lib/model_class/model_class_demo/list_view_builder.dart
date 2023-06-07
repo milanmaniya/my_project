@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/model_class/model_demo.dart';
+import 'package:my_project/model_class/model_class_demo/model_demo.dart';
 
 class ListViewBuilder extends StatefulWidget {
-  ListViewBuilder({super.key});
+  const ListViewBuilder({super.key});
 
   @override
   State<ListViewBuilder> createState() => _ListViewBuilderState();
