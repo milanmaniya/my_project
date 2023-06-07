@@ -1,4 +1,6 @@
-List<Map<String, dynamic>> instamap = [
+import 'package:my_project/model_class/instagram_model_class/insta_model_class.dart';
+
+List<Map<String, dynamic>> instagramDetails = [
   {
     "name": 'Chocolate',
     "url":
@@ -35,3 +37,5 @@ List<Map<String, dynamic>> instamap = [
         "https://images.unsplash.com/photo-1505253827648-b4de98bc66b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=382&q=80"
   },
 ];
+
+List<InstagramUser> instaData = [];

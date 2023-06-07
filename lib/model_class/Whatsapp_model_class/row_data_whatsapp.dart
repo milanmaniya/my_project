@@ -1,6 +1,6 @@
 import 'package:my_project/model_class/Whatsapp_model_class/model_class_whatsapp.dart';
 
-List<Map<String, dynamic>> whatsappUser = [
+List<Map<String, dynamic>> whatsappDetails = [
   {
     'name': "Milan Maniya",
     'url': "assets/images/WhatsApp Image 2023-06-05 at 15.27.07.jpg",
@@ -56,7 +56,7 @@ List<Map<String, dynamic>> whatsappUser = [
     'date': "12/05/2022"
   },
   {
-    'name': "Prianci Miyani",
+    'name': "Priancy Miyani",
     'url': "assets/images/WhatsApp Image 2023-06-05 at 15.27.07.jpg",
     'messase': "Good Morning",
     'date': "12/05/2022"

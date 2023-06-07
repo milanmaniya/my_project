@@ -1,4 +1,3 @@
-
 class WhatsappUser {
   String? name;
   String? url;
@@ -10,7 +9,7 @@ class WhatsappUser {
   factory WhatsappUser.fromJson(Map<String, dynamic> json) => WhatsappUser(
       name: json['name'],
       url: json['url'],
-      message: json['message'],
+      message: json['messase'],
       date: json['date']);
 
   Map<String, dynamic> toJson() {
@@ -23,7 +22,7 @@ class WhatsappUser {
       data['url'] = url;
     }
     if (message != null) {
-      data['message'] = message;
+      data['messase'] = message;
     }
     if (date != null) {
       data['date'] = date;

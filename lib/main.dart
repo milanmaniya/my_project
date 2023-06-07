@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/model_class/Whatsapp_model_class/pages/ui_main_page.dart';
+import 'package:my_project/model_class/instagram_model_class/insta_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       // theme: ThemeData(brightness: Brightness.dark),
-      home: UiPage(),
+      home: InstaUi(),
       debugShowCheckedModeBanner: false,
     );
   }

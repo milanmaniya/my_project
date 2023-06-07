@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/practice/Ui9/row_data_instagram.dart';
+import 'package:my_project/model_class/instagram_model_class/insta_model_class.dart';
+import 'package:my_project/model_class/instagram_model_class/row_data_instagram.dart';
 
-class InstagramListOfMap extends StatelessWidget {
-  const InstagramListOfMap({super.key});
+class InstaUi extends StatelessWidget {
+  const InstaUi({super.key});
 
   @override
   Widget build(BuildContext context) {
+    for (var element in instagramDetails) {
+      instaData.add(InstagramUser.fromJson(element));
+    }
+
     return Scaffold(
       backgroundColor: Colors.black87,
       appBar: AppBar(
@@ -76,7 +81,7 @@ class InstagramListOfMap extends StatelessWidget {
                   ),
                 ),
                 ...List.generate(
-                  instamap.length,
+                  instaData.length,
                   (index) => Column(
                     children: [
                       Stack(
@@ -111,8 +116,9 @@ class InstagramListOfMap extends StatelessWidget {
                               border: Border.all(
                                   color: Colors.grey.shade900, width: 4),
                               image: DecorationImage(
-                                  fit: BoxFit.cover,
-                                  image: NetworkImage(instamap[index]['url'])),
+                                fit: BoxFit.cover,
+                                image: NetworkImage(instaData[index].url!),
+                              ),
                             ),
                           ),
                         ],
@@ -171,22 +177,22 @@ class InstagramListOfMap extends StatelessWidget {
         child: Column(
           children: [
             ...List.generate(
-              instamap.length,
+              instaData.length,
               (index) => Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
                       CircleAvatar(
-                          radius: 18,
-                          backgroundImage:
-                              NetworkImage(instamap[index]['url'])),
+                        radius: 18,
+                        backgroundImage: NetworkImage(instaData[index].url!),
+                      ),
                       const SizedBox(
                         width: 15,
                       ),
                       Expanded(
                         child: Text(
-                          instamap[index]['name'],
+                          instaData[index].name.toString(),
                           style: const TextStyle(color: Colors.white),
                         ),
                       ),
@@ -203,8 +209,9 @@ class InstagramListOfMap extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: DecorationImage(
-                          fit: BoxFit.fitWidth,
-                          image: NetworkImage(instamap[index]['url'])),
+                        fit: BoxFit.fitWidth,
+                        image: NetworkImage(instaData[index].url!),
+                      ),
                     ),
                   ),
                   const Row(
