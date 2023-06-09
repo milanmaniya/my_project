@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/model_class/Gemail_model_class/gemail_ui.dart';
+import 'package:my_project/list_view/list_view_builder/list_view_builder_demo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       // theme: ThemeData(brightness: Brightness.dark),
-      home: GemailUi(),
+      home: ListViewBuilderDemo(),
       debugShowCheckedModeBanner: false,
     );
   }
