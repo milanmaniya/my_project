@@ -26,7 +26,8 @@ class ListViewCustomeDemo extends StatelessWidget {
               childrenDelegate: SliverChildBuilderDelegate(
                 (context, index) => Text(myFriends[index]),
                 childCount: myFriends.length,
-              ), 
+              ),
+               
             ),
           ),
         ],
