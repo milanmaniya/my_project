@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class GridViewBuilderDemo extends StatelessWidget {
-  GridViewBuilderDemo({super.key});
+class GridViewExtendedDemo extends StatelessWidget {
+  GridViewExtendedDemo({super.key});
 
   final List<Map<String, dynamic>> gridData = [
     {
@@ -42,24 +42,25 @@ class GridViewBuilderDemo extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
-            child: GridView.builder(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-                mainAxisSpacing: 8,
-                crossAxisSpacing: 8,
-              ),
-              itemBuilder: (context, index) => Container(
-                color: Colors.black12,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(gridData[index]['icon']),
-                    Text(gridData[index]['name']),
-                  ],
-                ),
-              ),
-              itemCount: gridData.length,
-            ),
+            child: GridView.extent(
+                scrollDirection: Axis.vertical,
+                crossAxisSpacing: 3,
+                mainAxisSpacing: 3,
+                maxCrossAxisExtent: 40,
+                children: List.generate(
+                  gridData.length,
+                  (index) => Container(
+                    color: Colors.black26,
+                    alignment: Alignment.center,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Icon(gridData[index]['icon']),
+                        Text(gridData[index]['name']),
+                      ],
+                    ),
+                  ),
+                )),
           ),
         ],
       ),
