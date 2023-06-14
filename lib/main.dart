@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/grid_view/grid_view_extended/grid_view_extended_demo.dart';
-import 'package:my_project/statefull_widgets/counter_app.dart';
+import 'package:my_project/tic_toc_toe/tic_tac_toe_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,10 +15,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      
+    return const MaterialApp(
       // theme: ThemeData(brightness: Brightness.dark),
-      home: CounterApp(),
+      home: TicToetacPage(),
       debugShowCheckedModeBanner: false,
     );
   }

@@ -19,9 +19,12 @@ class _CounterAppState extends State<CounterApp> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
-              onPressed: () {
-                MyCounter.decrement();
-              },
+              onPressed: (MyCounter.number == 0
+                  ? null
+                  : () {
+                      MyCounter.decrement();
+                      setState(() {});
+                    }),
               icon: const Icon(Icons.remove),
             ),
             Text(
@@ -32,9 +35,12 @@ class _CounterAppState extends State<CounterApp> {
                   fontWeight: FontWeight.bold),
             ),
             IconButton(
-              onPressed: () {
-                MyCounter.increment();
-              },
+              onPressed: (MyCounter.number == 50
+                  ? null
+                  : () {
+                      MyCounter.increment();
+                      setState(() {});
+                    }),
               icon: const Icon(Icons.add),
             ),
           ],
@@ -43,9 +49,12 @@ class _CounterAppState extends State<CounterApp> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
-              onPressed: () {
-                MyDoubleCounter.doubleDecrement();
-              },
+              onPressed: (MyDoubleCounter.doubleCount == 0
+                  ? null
+                  : () {
+                      MyDoubleCounter.doubleDecrement();
+                      setState(() {});
+                    }),
               icon: const Icon(Icons.remove),
             ),
             Text(
@@ -55,10 +64,13 @@ class _CounterAppState extends State<CounterApp> {
                   color: Colors.black,
                   fontWeight: FontWeight.bold),
             ),
-            IconButton(
-              onPressed: () {
-                MyDoubleCounter.doubleIncrement();
-              },
+            IconButton(  
+              onPressed: (MyDoubleCounter.doubleCount == 50
+                  ? null
+                  : () {
+                      MyDoubleCounter.doubleIncrement();
+                      setState(() {});
+                    }),
               icon: const Icon(Icons.add),
             ),
           ],
