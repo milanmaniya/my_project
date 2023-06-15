@@ -16,13 +16,70 @@ class _TicToetacPageState extends State<TicToetacPage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            (isActivated) ? player1 : player2,
-            style: const TextStyle(
-              fontSize: 40,
-              fontWeight: FontWeight.bold,
-              fontFamily: "Dancing Script",
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Column(
+                children: [
+                  const Text(
+                    "Player O",
+                    style: TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Dancing Script",
+                    ),
+                  ),
+                  Text(
+                    numberO.toString(),
+                    style: const TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Dancing Script",
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  const Text(
+                    "Player X",
+                    style: TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Dancing Script",
+                    ),
+                  ),
+                  Text(
+                    numberX.toString(),
+                    style: const TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Dancing Script",
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  const Text(
+                    "Draw",
+                    style: TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Dancing Script",
+                    ),
+                  ),
+                  Text(
+                    numberDraw.toString(),
+                    style: const TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Dancing Script",
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
           const SizedBox(
             height: 35,
@@ -37,19 +94,27 @@ class _TicToetacPageState extends State<TicToetacPage> {
                 9,
                 (index) => GestureDetector(
                   onTap: () {
-                    TicTocToe.playerSwap(index);
-                    TicTocToe.winnerState();
+                    TicTocToe.playerSwap(index, context);
                     setState(() {});
                   },
-                  child: Container(
-                    alignment: Alignment.center,
-                    color: Colors.red,
-                    child: Text(
-                      value[index],
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 60,
-                        fontWeight: FontWeight.bold,
+                  child: Card(
+                    elevation: elevation[index],
+                    color: cardColor[index],
+                    margin: const EdgeInsets.all(3),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      side: const BorderSide(
+                        color: Colors.black26,
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        value[index],
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 60,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
@@ -58,70 +123,59 @@ class _TicToetacPageState extends State<TicToetacPage> {
             ],
           ),
           const SizedBox(
-            height: 40,
+            height: 30,
           ),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Column(
-                children: [
-                  Text(
-                    "Player O",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Dancing Script",
-                    ),
+              ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.grey.shade400),
+                ),
+                onPressed: () {
+                  TicTocToe.clearControl();
+                  setState(() {});
+                },
+                child: const Text(
+                  "Reset",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "Dancing Script",
                   ),
-                  Text(
-                    "0",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Dancing Script",
-                    ),
-                  ),
-                ],
+                ),
               ),
-              Column(
-                children: [
-                  Text(
-                    "Player X",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Dancing Script",
-                    ),
-                  ),
-                  Text(
-                    "0",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Dancing Script",
-                    ),
-                  ),
-                ],
+              Text(
+                (isActivated) ? player1 : player2,
+                style: const TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Dancing Script",
+                ),
               ),
-              Column(
-                children: [
-                  Text(
-                    "Draw",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Dancing Script",
-                    ),
+              ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.grey.shade400),
+                ),
+                onPressed: () {
+                  TicTocToe.clearControl();
+                  numberO = 0;
+                  numberDraw = 0;
+                  numberX = 0;
+                  setState(() {});
+                },
+                child: const Text(
+                  "Restart",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "Dancing Script",
                   ),
-                  Text(
-                    "0",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: "Dancing Script",
-                    ),
-                  ),
-                ],
+                ),
               ),
             ],
           ),
