@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/tic_toc_toe/tic_tac_toe_ui.dart';
+import 'package:my_project/random_tic_tac_toe_game/random_tic_tac_toe_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       // theme: ThemeData(brightness: Brightness.dark),
-      home: TicToetacPage(),
+      home: RandomTicTacToeUi(),
       debugShowCheckedModeBanner: false,
     );
   }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-String player1 = 'Player O';
-String player2 = 'Player X';
+String player1 = 'O turn';
+String player2 = 'X turn';
 bool isActivated = false;
 int numberO = 0, numberX = 0, numberDraw = 0, fileBox = 0;
 
