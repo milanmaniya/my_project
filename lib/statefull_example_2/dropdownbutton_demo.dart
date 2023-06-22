@@ -43,11 +43,12 @@ class _DropDownButtonState extends State<DropDownButton> {
           items: List.generate(
             myFrieds.length,
             (index) => DropdownMenuItem(
+              value: myFrieds[index],
               child: Text(myFrieds[index]),
             ),
           ),
           onChanged: (index) {
-            selectedIndex = index;
+            selectedIndex = index as int;
             setState(() {});
           },
         ),

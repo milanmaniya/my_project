@@ -12,29 +12,53 @@ class _CheckBoxDemoState extends State<CheckBoxDemo> {
   bool isFootball = false;
   @override
   Widget build(BuildContext context) {
+    // return Scaffold(
+    //   body: Center(
+    //     child: Row(
+    //       children: [
+    //         const Text('Hobbey: '),
+    //         Checkbox(
+    //           value: isCricket,
+    //           onChanged: (value) {
+    //             isCricket = value!;
+    //             setState(() {});
+    //           },
+    //         ),
+    //         const Text('Cricket'),
+    //         Checkbox(
+    //           value: isFootball,
+    //           onChanged: (value) {
+    //             isFootball = value!;
+    //             setState(() {});
+    //           },
+    //         ),
+    //         const Text('Football'),
+    //       ],
+    //     ),
+    //   ),
+    // );
+
     return Scaffold(
-      body: Center(
-        child: Row(
-          children: [
-            Text('Hobbey: '),
-            Checkbox(
-              value: isCricket,
-              onChanged: (value) {
-                isCricket = value!;
-                setState(() {});
-              },
-            ),
-            Text('Cricket'),
-            Checkbox(
-              value: isFootball,
-              onChanged: (value) {
-                isFootball = value!;
-                setState(() {});
-              },
-            ),
-            Text('Football'),
-          ],
-        ),
+      body: Column(
+        children: [
+          const Text("Hobbey: "),
+          CheckboxListTile(
+            value: isCricket,
+            onChanged: (value) {
+              isCricket = value!;
+              setState(() {});
+            },
+            secondary: const Text('Cricket'),
+          ),
+          CheckboxListTile(
+            value: isFootball,
+            onChanged: (value) {
+              isFootball = value!;
+              setState(() {});
+            },
+            secondary: const Text('Football'),
+          ),
+        ],
       ),
     );
   }

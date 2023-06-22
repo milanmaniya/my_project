@@ -12,29 +12,60 @@ class _RadioButtomDemoState extends State<RadioButtomDemo> {
 
   @override
   Widget build(BuildContext context) {
+    // return Scaffold(
+    //   body: Center(
+    //     child: Row(
+    //       children: [
+    //         Text('Gender'),
+    //         Radio(
+    //           value: male,
+    //           groupValue: gender,
+    //           onChanged: (value) {
+    //             gender = value!;
+    //             setState(() {});
+    //           },
+    //         ),
+    //         Text('Male'),
+    //         Radio(
+    //           value: female,
+    //           groupValue: gender,
+    //           onChanged: (value) {
+    //             gender = value!;
+    //             setState(() {});
+    //           },
+    //         ),
+    //         Text('Female'),
+    //       ],
+    //     ),
+    //   ),
+    // );
+
     return Scaffold(
       body: Center(
-        child: Row(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text('Gender'),
-            Radio(
+            const Text('Gneder: '),
+            RadioListTile(
               value: male,
               groupValue: gender,
               onChanged: (value) {
                 gender = value!;
                 setState(() {});
               },
+              title: const Text('Male'),
+              // toggleable: true,
+              secondary: const Text('Male'),
             ),
-            Text('Male'),
-            Radio(
+            RadioListTile(
               value: female,
               groupValue: gender,
               onChanged: (value) {
                 gender = value!;
                 setState(() {});
               },
+              secondary: const Text('Female'),
             ),
-            Text('Female'),
           ],
         ),
       ),
