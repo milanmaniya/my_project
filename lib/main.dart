@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/statefull_example_2/checkbox_demo.dart';
+import 'package:my_project/tab_bar_demo2/tab_bar_demo2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       // theme: ThemeData(brightness: Brightness.dark),
-      home: CheckBoxDemo(),
+      home: TabBarDemo2(),
       debugShowCheckedModeBanner: false,
     );
   }
