@@ -34,11 +34,14 @@ class _SingleTextFieldDemoState extends State<SingleTextFieldDemo> {
               onPressed: isUpdate
                   ? () {
                       userData[currentIndex] = _txtUserNameController.text;
+                      isUpdate = false;
+                      _txtUserNameController.clear();
                       setState(() {});
                     }
                   : () {
                       userData.add(_txtUserNameController.text);
                       _txtUserNameController.clear();
+                      print(userData);
                       setState(() {});
                     },
               child: isUpdate ? const Text('Update') : const Text('Submit'),
@@ -48,14 +51,21 @@ class _SingleTextFieldDemoState extends State<SingleTextFieldDemo> {
                 : Expanded(
                     child: ListView.builder(
                       itemCount: userData.length,
-                      itemBuilder: (context, index) => ListTile(
-                        onTap: () {
-                          currentIndex = index;
-                          isUpdate = true;
-                          _txtUserNameController.text = userData[index];
+                      itemBuilder: (context, index) => Dismissible(
+                        onDismissed: (direction) {
+                          userData.removeAt(index);
                           setState(() {});
                         },
-                        title: Text(userData[index]),
+                        key: UniqueKey(),
+                        child: ListTile(
+                          onTap: () {
+                            currentIndex = index;
+                            isUpdate = true;
+                            _txtUserNameController.text = userData[index];
+                            setState(() {});
+                          },
+                          title: Text(userData[index]),
+                        ),
                       ),
                     ),
                   ),

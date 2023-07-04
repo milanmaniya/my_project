@@ -10,16 +10,7 @@ class PattenTextFieldUi extends StatefulWidget {
 class _PattenTextFieldUiState extends State<PattenTextFieldUi> {
   final TextEditingController _editingController = TextEditingController();
 
-  List<String> pattenName = List.generate(24, (index) => 'Patten $index');
-
-  bool isSelected = false;
-
-  List logicList = [
-    for (int i = 1; i <= 5; i++)
-      {
-        for (int j = 1; j <= i; j++) {print(j)}
-      },
-  ];
+  String value = '';
 
   @override
   Widget build(BuildContext context) {
@@ -50,12 +41,11 @@ class _PattenTextFieldUiState extends State<PattenTextFieldUi> {
                 ),
                 itemBuilder: (context, index) => ElevatedButton(
                   onPressed: () {
-                    isSelected = true;
-                    print(isSelected);
+                
                     setState(() {});
                   },
                   child: Text(
-                    pattenName[index],
+                    value,
                     style: const TextStyle(
                       fontFamily: 'Dancing Script',
                       fontSize: 20,
@@ -69,7 +59,7 @@ class _PattenTextFieldUiState extends State<PattenTextFieldUi> {
               height: 200,
               width: double.infinity,
               alignment: Alignment.center,
-              child: (isSelected == true) ? Text(logicList.toString()) : null,
+              child: Text(value),
             ),
           ],
         ),
