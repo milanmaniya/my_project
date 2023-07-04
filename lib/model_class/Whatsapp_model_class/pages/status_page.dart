@@ -11,13 +11,19 @@ class StatusPage extends StatelessWidget {
       child: Column(
         children: List.generate(
           whatsappData.length,
-          (index) => ListTile(
-            title: Text(whatsappData[index].name.toString()),
-            subtitle: Text(whatsappData[index].message.toString()),
-            trailing: Text(whatsappData[index].date.toString()),
-            leading: CircleAvatar(
-              radius: 18,
-              backgroundImage: AssetImage(whatsappData[index].url!),
+          (index) => Dismissible(
+            onDismissed: (direction) {
+              whatsappData.removeAt(index);
+            },
+            key: UniqueKey(),
+            child: ListTile(
+              title: Text(whatsappData[index].name.toString()),
+              subtitle: Text(whatsappData[index].message.toString()),
+              trailing: Text(whatsappData[index].date.toString()),
+              leading: CircleAvatar(
+                radius: 18,
+                backgroundImage: AssetImage(whatsappData[index].url!),
+              ),
             ),
           ),
         ),
