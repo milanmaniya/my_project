@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:my_project/model_class/Whatsapp_model_class/row_data_whatsapp.dart';
 
-class CallPage extends StatelessWidget {
+class CallPage extends StatefulWidget {
   const CallPage({super.key});
 
+  @override
+  State<CallPage> createState() => _CallPageState();
+}
+
+class _CallPageState extends State<CallPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +19,9 @@ class CallPage extends StatelessWidget {
             (index) => Dismissible(
               onDismissed: (direction) {
                 whatsappData.removeAt(index);
-              
+                setState(() {
+                  
+                });
               },
               key: UniqueKey(),
               child: ListTile(

@@ -41,7 +41,7 @@ class _SingleTextFieldDemoState extends State<SingleTextFieldDemo> {
                   : () {
                       userData.add(_txtUserNameController.text);
                       _txtUserNameController.clear();
-                      print(userData);
+
                       setState(() {});
                     },
               child: isUpdate ? const Text('Update') : const Text('Submit'),
