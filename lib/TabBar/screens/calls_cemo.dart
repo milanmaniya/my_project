@@ -49,7 +49,7 @@ class _CallsDemoState extends State<CallsDemo> {
             ),
           ),
         );
-    return Container(
+    return SizedBox(
       height: 684,
       width: double.infinity,
       child: SingleChildScrollView(

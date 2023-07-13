@@ -125,7 +125,7 @@ class _FormUiState extends State<FormUi> {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: ElevatedButton(
-                  onPressed: (name == '' && hobbeyName == '')
+                  onPressed: (name == '' && hobbeyName.isEmpty)
                       ? null
                       : () {
                           isPress = true;

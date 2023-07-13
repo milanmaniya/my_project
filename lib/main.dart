@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/crud_demo/form_field/text_form_field_task.dart';
+import 'package:my_project/animation_demo/button_width_demo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +15,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      // theme: ThemeData(brightness: Brightness.dark),
-      home: TextFormFieldTask(),
+    return MaterialApp(
+      theme: ThemeData(useMaterial3: true),
+      home: const ButttonWidthChange(),
       debugShowCheckedModeBanner: false,
     );
   }
