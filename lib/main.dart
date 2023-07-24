@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/animation_demo/button_width_demo.dart';
+import 'package:my_project/dialog_box/dialog_box_demo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(useMaterial3: true),
-      home: const ButttonWidthChange(),
+      home: const DialogBoxDemo(),
       debugShowCheckedModeBanner: false,
     );
   }

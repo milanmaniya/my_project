@@ -30,8 +30,19 @@ class _ButttonWidthChangeState extends State<ButttonWidthChange>
         child: AnimatedBuilder(
           animation: _animationController!,
           builder: (context, child) => ElevatedButton(
+            style: ButtonStyle(
+              shape: MaterialStateProperty.all(
+                BeveledRectangleBorder(
+                  borderRadius: BorderRadius.circular(5),
+                  side: BorderSide(
+                    width: width,
+                    color: Colors.pink.shade100,
+                  ),
+                ),
+              ),
+            ),
             onPressed: () {
-              width = random.nextDouble()*100/10;
+              width = random.nextDouble() * 100 / 20;
               setState(() {});
             },
             child: const Text('Width Value Change'),
