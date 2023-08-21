@@ -1,7 +1,4 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class TextDecorationDemo extends StatefulWidget {
   const TextDecorationDemo({super.key});
@@ -13,7 +10,7 @@ class TextDecorationDemo extends StatefulWidget {
 class _TextDecorationDemoState extends State<TextDecorationDemo> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: TextField(
           cursorColor: Colors.red,
@@ -32,12 +29,12 @@ class _TextDecorationDemoState extends State<TextDecorationDemo> {
           //   FilteringTextInputFormatter.digitsOnly,
           // ],
           // showCursor: false,
-          
+
           // mouseCursor: MouseCursor.uncontrolled,
           // obscureText: true,
           // obscuringCharacter: '?',
 
-          cursorRadius: const Radius.circular(20),
+          cursorRadius: Radius.circular(20),
         ),
       ),
     );

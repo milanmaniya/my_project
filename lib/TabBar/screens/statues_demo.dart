@@ -49,7 +49,7 @@ class _StatuesDemoState extends State<StatuesDemo> {
       );
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 684,
       width: double.infinity,
       child: SingleChildScrollView(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/dialog_box/dialog_box_demo.dart';
+import 'package:my_project/navigation_example/first_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(useMaterial3: true),
-      home: const DialogBoxDemo(),
+      home: const FirstScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

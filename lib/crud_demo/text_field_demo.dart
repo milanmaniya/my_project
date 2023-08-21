@@ -25,6 +25,7 @@ class _TextFieldDemoState extends State<TextFieldDemo> {
 
   @override
   void dispose() {
+    super.dispose();
     //   _txtFirstNameController.dispose();
     //   _txtMiddleNameController.dispose();
     //   _txtLastNameController.dispose();

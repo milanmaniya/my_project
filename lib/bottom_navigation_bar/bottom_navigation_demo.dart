@@ -3,7 +3,6 @@ import 'package:my_project/bottom_navigation_bar/screens/home_screen_demo.dart';
 import 'package:my_project/bottom_navigation_bar/screens/library_demo.dart';
 import 'package:my_project/bottom_navigation_bar/screens/shorts_demo.dart';
 import 'package:my_project/bottom_navigation_bar/screens/subscription_demo.dart';
-import 'package:my_project/random_tic_tac_toe_game/random_tic_tac_toe_controller.dart';
 
 class BottomNavigationDemo extends StatefulWidget {
   const BottomNavigationDemo({super.key});
@@ -33,7 +32,6 @@ class _BottomNavigationDemoState extends State<BottomNavigationDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-        
         currentIndex: selectedIndex,
         onTap: (value) {
           selectedIndex = value;
