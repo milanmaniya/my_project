@@ -26,8 +26,8 @@ class _SecondScreenState extends State<SecondScreen> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pop(context);
-                // Navigator.defaultRouteName;
+                // Navigator.pop(context);
+                print(Navigator.defaultRouteName);
               },
               child: const Text('Goto First screen'),
             ),

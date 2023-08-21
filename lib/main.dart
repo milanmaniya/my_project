@@ -18,9 +18,9 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/first',
+      initialRoute: '/',
       routes: {
-        '/first': (context) => const FirstScreen(),
+        '/': (context) => const FirstScreen(),
         '/second': (context) => const SecondScreen(),
         '/third': (context) => const ThirdScren(),
       },
